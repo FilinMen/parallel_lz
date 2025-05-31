@@ -1,10 +1,9 @@
-import sda as s
+import thread as tr
 
 def main():
-    numbers = list(range(1, 501))  # Числа от 1 до 500
-    
-    # Параллельное вычисление
-    parallel_results, parallel_time = parallel_factorials(numbers)
-    
-    # Последовательное вычисление
-    sequential_results, sequential_time = sequential_factorials(numbers)
+
+    tr.main()
+
+
+if __name__ == '__main__':
+    main()
